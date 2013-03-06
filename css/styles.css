@@ -61,6 +61,3 @@ nav ul li:first-child a {
 nav ul li:last-child a {
   border-right: none;
 }
-.sidebar {
-  width: 300 px;
-}

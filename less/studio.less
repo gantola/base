@@ -1,0 +1,56 @@
+@theme: #555;
+@dim: 1px;
+@style: solid;
+
+@page: 960;
+
+/* .width(@contentWidth, @contextWidth) {
+	(@contentWidth / @contextWidth) * 100%;
+} */
+
+.float(@direction: left) { float: @direction; } /* altro valore per @direction: right */
+
+.fontSize(@dimText: 12){
+	font-size: @dimText * 1px;
+	font-size: (@dimText/10) * 1rem;
+}
+/* radius */
+.radius(@radius: 5px){
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+@alpha: .5;
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @color: rgba(0,0,0,@alpha)) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+.border {
+	border: @dim @style @theme;
+}
+.wrap () {
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* =inzio regole */
+body {
+	color: @theme;
+	font-size: 62%;
+	line-height: 1.5;
+}
+pre { .wrap }
+p {
+	.fontSize;
+	padding: 10px;
+	.border;
+	.radius;
+	.box-shadow(0,1px,2px)
+}
+.main { clear: both; overflow: hidden; }
+.sidebar, .content { .float; }
+.sidebar { .float(right); }
