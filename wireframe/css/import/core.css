@@ -1,0 +1,29 @@
+/* @Core */
+html { font-size: 62.5%; }
+body { font-family: verdana, helvetica, sans-serif; }
+h1,h2,h3,h4,h5,h6,th { font-family: helvetica, sans-serif;}
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+.lf { float: left; display: inline }
+.rf { float: right; display: inline }
+.cf { clear: both; margin: 0 }
+.l-img { float: left; display: inline; margin: 0 5px 5px 0 }
+.r-img { float: right; display: inline; margin: 0 0 5px 5px }
+.c-img { display: block; width: auto; clear: both; margin: 0 auto 10px }
+.l-img img, .r-img img, .c-img img { display: block; }
+.nowrap { white-space: nowrap; }
+.t-right { text-align: right; }
+.t-left { text-align: left; }
+.t-justify { text-align: justify; }
+.t-center { text-align: center; }
+.clear { clear: both; }
+.c-left { clear: left; }
+.c-right { clear: right; }
+.nomrg { margin: 0 }
+.break { display: block; }
+.pull-left { float: left; }
+.pull-right { float: right; }
+.nowrap { white-space: nowrap;}
+.inl { width: auto; }
+.amp { font-family : "Hoefler Text"; font-style : italic; font-weight : normal; }
+/* @end Core */

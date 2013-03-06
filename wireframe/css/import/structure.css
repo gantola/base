@@ -1,0 +1,14 @@
+/* @Structure */
+body { text-align: center; padding: 0; }
+.pg {
+	text-align: center;
+	width: 95%;
+	max-width: 994px;
+	margin: 0 auto; padding: 0;
+}
+.pg-inner { text-align: left; }
+.masthead {
+	
+}
+
+/* @end Structure */

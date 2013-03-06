@@ -1,0 +1,29 @@
+* { background: #fff; color: #000; }
+body, html body {
+	background: #fff; color: #000;
+	font: 12pt/1.5 "Trebuchet MS", Helvetica, Arial, Helvetica, serif;
+}
+.pg { padding: 0.1cm; }
+h1, h2, h3 { font-family: Garamoud, Georgia, serif }
+caption, table { border-bottom: 1pt solid #dedede; }
+th, td { vertical-align: baseline; }
+th.col { border: 0; text-align: center;  }
+a { border-bottom: 1px solid #999; padding-bottom: 2px; text-decoration: none; }
+abbr { border: 0; }
+input { border: 1px solid #000 }
+
+
+.field-content { margin: 0 0 20pt; }
+label { display: inline-block; }
+input[type="text"],
+textarea { border: 1px solid #000; border-width: 1px; }
+select { border: 0 }
+
+
+fieldset { border: 0; padding: 0; }
+.opt li {
+	list-style: none; margin-left: 0;
+}
+
+.logo a, .logo img { border: 0 }
+.btn, .user-actions, .pagination, .navbar { display: none }

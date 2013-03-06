@@ -1,0 +1,46 @@
+@media only screen {
+    button,
+	input,
+	select,
+	textarea,
+	input[type="radio"],
+	input[type="checkbox"] {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	input[type="password"],
+	input[type="text"],
+	textarea,
+	select {
+		-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1)
+	}
+	input[type="password"]:hover,
+	input[type="text"]:hover,
+	textarea:hover,
+	input[type="password"]:focus,
+	input[type="text"]:focus,
+	textarea:focus,
+	select:focus {
+		-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1)
+	}
+	input[type="password"]:focus,
+	input[type="text"]:focus,
+	textarea:focus,
+	select:focus {
+		-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1)
+	}
+	input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+	}
+	
+}

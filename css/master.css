@@ -1,0 +1,144 @@
+/*
+	Reset
+	Core
+	Typo
+	Link
+	Structure
+	-Colours
+	-Link
+	-Header
+	Navigation
+	-Footer
+	Form
+*/
+@import url(import/reset.css);
+@import url(import/core.css);
+@import url(import/typo.css);
+@import url(import/link.css);
+@import url(import/structure.css);
+@import url(import/navigation.css);
+@import url(import/form.css);
+@import url(import/grid.css);
+
+.example { padding: 15px; margin: 0 0 15px; border: 5px solid #000 }
+
+/* @Nagigation */
+/* =nav-header */
+.navbar-header {
+	background: url(img/bk_nav_header.png) repeat-x 0 0;
+	padding: 0; margin: 10px 0 15px;
+	border: 1px solid #EFEFEF; border-width: 1px 0; border-top-color: #ccc;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+}
+.nav-header { margin: 0; }
+.nav-header a {
+	color: #008acc;
+	text-decoration: none;
+	border: 1px solid #efefef; border-width: 0 1px 0 0
+}
+.nav-header ul { background-color: #f5f5f5; border: 1px solid #EFEFEF; border-width: 0 1px 1px }
+.nav-header li.has-submenu { background: #f5f5f5 url(img/ico_submenu.gif) no-repeat 98% -18px; }
+.nav-header .current { background-color: #fff; }
+.nav-header .current a { color: #DC9C11 }
+.current .nav-sub a,
+.hover a,
+.nav-header a:hover { color: #000 }
+.nav-header .nav-sub a {
+	font-weight: normal;
+	border-width: 0 0 1px; border-color: #fff
+}
+.nav-header .nav-sub li:last-child a { border: 0 }
+.nav-header .nav-sub a:hover { background-color: #eee }
+
+/* =panel */
+.panel-action-block { overflow: hidden; margin: 0 0 15px; border-bottom: 1px solid #dedede; }
+.panel-action {
+	background-color: #f5f5f5;
+	font-size: 10px; line-height: 15px; letter-spacing: .1em;
+	text-align: center; text-decoration: none; text-transform: uppercase;
+	display: block; float: left;
+	padding: 5px; margin: 0;
+	border: 1px solid #dedede; border-width: 1px 1px 0;
+}
+.panel-action:hover { text-decoration: none; }
+.panel-bd { /*padding: 15px;*/ }
+
+.nav-block-kedrion a { color: #fff; text-decoration: none; padding: 18px 15px }
+.nav-block-kedrion a:hover  { background-color: #4d62a6; color: #fff; text-decoration: none }
+.nav-block-kedrion {
+	width: 100%; float: left;
+	background-color: #424242; color: #fff;
+	margin: 0 0 45px;
+}
+.nav-block-kedrion li:hover,
+.nav-block-kedrion li.hover { background-color: #4d62a6; }
+
+.nav-block-kedrion ul { background-color: #424242; }
+.nav-block-kedrion ul ul { background-color: #606060; width: 220px; }
+.nav-block-kedrion ul ul a { padding: 5px 15px; }
+.nav-block-kedrion ul li { border-top: 1px solid #9a9a9a }
+
+.box { background: #f5f5f5; padding: 20px; margin: 0 0 20px; }
+.box-complex  {
+	padding: 0;
+}
+.box-complex div {
+	background-color: #fff;
+	padding: 20px; margin: 0;
+	background-clip: padding-box;
+}
+.shadow {
+	-webkit-box-shadow: 1px 1px 4px #000;
+	   -moz-box-shadow: 1px 1px 4px #000;
+	        box-shadow: 1px 1px 4px #000;
+			/*box-shadow: 1px 1px 4px -4px #000;*/
+}
+.radius {
+	overflow: hidden; /* =Fix overlay background of inner block over border of outer block */
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+.border {
+	border: 1px solid #000
+}
+.bk { background: #fff; color: #000 }
+.bk-clip {
+	background-clip: padding-box;
+	-icab-background-clip: padding; /* border */
+	-khtml-background-clip: padding;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+}
+.bk-origin {
+	background-origin: border-box;
+	-icab-background-origin: border;
+	-khtml-background-origin: border;
+	-moz-background-origin: border;
+	-webkit-background-origin: border;
+}
+.mrg-all { margin: 10px; }
+.pdg-all { padding: 10px; }
+.mrg-no { margin: 0 }
+.pdg-no { padding: 0 }
+.mrg-bt { margin-bottom: 20px; }
+.pdg-bt { padding-bottom: 20px; }
+
+.boxshadow {
+	box-shadow: 21px 0 21px -21px #000, -21px 0 21px -21px #000
+}
+@media only screen {
+    /* "Advanced" CSS2 and CSS3 goes here */
+}
+@media screen and (max-width: 480px) {
+	.pg { width: 90%; padding: 5% }
+	.nav-main .nav-item { float: none; width: 100%; margin: 0 0 10px; }
+	.form-block-hrz .field-label,
+	.form-block-hrz .field-content,
+	.form-block-hrz p.error,
+	.form-block-hrz div.error { text-align: left; float: none; width: 100% }
+	.wrp .t-unit-a,
+	.wrp .t-unit-b { float: none; width: 100%; }
+}

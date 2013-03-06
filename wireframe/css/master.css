@@ -1,0 +1,98 @@
+/*
+	Reset
+	Core
+	Typo
+	Link
+	Structure
+	-Colours
+	-Link
+	-Header
+	Navigation
+	-Footer
+	Form
+*/
+@import url(import/reset.css);
+@import url(import/core.css);
+@import url(import/typo.css);
+@import url(import/link.css);
+@import url(import/structure.css);
+@import url(import/navigation.css);
+@import url(import/form.css);
+/*@import url(import/grid.css);*/
+/* =typo */
+
+/* =link */
+a { color: #d92941; text-decoration: none }
+a:link, a:visited {}
+a:hover, a:focus, a:active { text-decoration: underline }
+
+/* =table */
+.table th,
+.table td {
+	border: 1px dashed #999; border-width: 0 0 1px
+}
+.table th { color: #145b9d; text-transform: uppercase; font-weight: 700; }
+.table .odd th,
+.table .odd td { background-color: #e5e5e5; }
+
+/* @Nagigation */
+.shadow {
+	-webkit-box-shadow: 1px 1px 4px #000;
+	   -moz-box-shadow: 1px 1px 4px #000;
+	        box-shadow: 1px 1px 4px #000;
+			/*box-shadow: 1px 1px 4px -4px #000;*/
+}
+.radius {
+	overflow: hidden; /* =Fix overlay background of inner block over border of outer block */
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+.border {
+	border: 1px solid #000
+}
+.bk { background: #fff; color: #000 }
+.bk-clip {
+	background-clip: padding-box;
+	-icab-background-clip: padding; /* border */
+	-khtml-background-clip: padding;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+}
+.bk-origin {
+	background-origin: border-box;
+	-icab-background-origin: border;
+	-khtml-background-origin: border;
+	-moz-background-origin: border;
+	-webkit-background-origin: border;
+}
+.mrg-all { margin: 10px; }
+.pdg-all { padding: 10px; }
+.mrg-no { margin: 0 }
+.pdg-no { padding: 0 }
+.mrg-bt { margin-bottom: 20px; }
+.pdg-bt { padding-bottom: 20px; }
+
+.boxshadow {
+	box-shadow: 21px 0 21px -21px #000, -21px 0 21px -21px #000
+}
+/* =form */
+.table input {
+	width: 100%;
+}
+.btnbar { overflow: hidden; }
+
+/* =actionsbar */
+.actionsbar { clear: both; }
+
+.sub { display: none; }
+
+@media only screen {
+    /* "Advanced" CSS2 and CSS3 goes here */
+}
+@media screen and (min-width: 480px) {
+	.pg {
+		border: 5px solid #000;
+		/*width: 100%;*/
+	}
+}

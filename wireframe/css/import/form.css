@@ -1,0 +1,513 @@
+/* @Form */
+/* form-block, [form-block-hrz, form-inline ]*/
+form {}
+fieldset { margin: 0; border: 0; }
+fieldset:last-child,
+fieldset:last-of-type { margin: 0 }
+fieldset legend {
+	display: inline-block;
+	padding: 0 0 5px
+}
+fieldset fieldset legend {
+	background: transparent;
+	color: inhrent;
+	padding: 0 0 5px;
+}
+legend {
+    border: 0;
+    white-space: normal;
+    *margin-left: -7px;
+}
+label {
+	display: block;
+	margin: 0 0 5px; padding: 0;
+}
+label[for]{ cursor: pointer; }
+label em {
+	font-weight: normal;
+	font-style: normal;
+}
+button,
+input,
+select,
+textarea {
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+    margin: 0 0 10px; padding: 0;
+    vertical-align: baseline;
+	*vertical-align: middle;
+}
+button {
+	background-color: transparent;
+	width: auto; overflow: visible;
+	display: block;
+	margin: 0; padding: 0;
+	border: 0;
+	cursor: pointer;
+	vertical-align: middle;
+}
+button span {
+	text-transform: uppercase;
+	text-align: center;
+	overflow: visible;
+	height: 1%;
+	display: block;
+	white-space: nowrap;
+	margin: 0; padding: 0;
+}
+input.btn {
+	cursor: pointer
+}
+button::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
+button,
+input {
+	line-height: normal;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+    *overflow: visible;
+}
+
+button[disabled],
+input[disabled] {
+	cursor: default;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+textarea {
+    overflow: auto; 
+    vertical-align: top;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input.button {
+	vertical-align: middle;
+	overflow: visible;
+	display: inline-block;
+	border: 0;
+	text-decoration: none;
+}
+input, select, textarea {
+	width: 100%;
+}
+select { width: auto; }
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: bottom;
+	width: 15px; height: 15px;
+	float: left; 
+	position: relative;
+	margin: 0; padding: 0;
+}
+input[type="password"],
+input[type="text"],
+textarea,
+select {
+	border: 1px solid #a6a6a6;
+	border-color: #c0c0c0 #d9d9d9 #d9d9d9 #a6a6a6;
+}
+input[type="password"]:hover,
+input[type="text"]:hover,
+textarea:hover {
+	border-color: #a0a0a0;
+}
+input[type="password"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+	outline: none;
+	border-color: #4d90fe;
+}
+input[type="file"] {
+	vertical-align: baseline;
+	height: 22px;
+	line-height: 22px;
+	padding-top: 0; padding-bottom: 0;
+	/* In IE7, the height of the select element cannot be changed by height, only font-size */
+	*margin-top: 5px;
+	/* For IE7, add top margin to align select with labels */
+}
+
+/* btnbar */
+.btnbar { clear: both; overflow: hidden; }
+/* =btn-group */
+.btnbar, .btn-group { padding: 5px 0 0; }
+.btnbar .btn-group { padding: 0; }
+/* =btn */
+.btn {
+  background-color: #ccc; color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+  *line-height: 18px;
+  font-weight: normal;
+  text-align: center; text-transform: capitalize;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+
+  vertical-align: middle;
+
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  
+  padding: 10px 15px;
+  margin: 0 0 5px;
+  *margin-left: .3em;
+}
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled] {
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9;
+}
+.btn:first-child {
+  *margin-left: 0;
+}
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+  *background-color: #000;
+}
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-primary { background-color: #0e414e; color: #fff;
+}
+.btn-small, .btn-secondary {
+	font-size: 14px;
+	line-height: 14px;
+	*line-height: 14px;
+	padding: 5px 10px;
+}
+.btn-primary + .btn-secondary {
+	margin-left: 10px
+}
+.pull-right .btn { margin-left: 5px; }
+.pull-left .btn { margin-right: 5px; }
+
+.btn-primary {
+	font-family: helvetica;
+	font-weight: 700;
+	border: 0;
+}
+
+/* =opt */
+.opt, .opt ol {
+	clear: both; overflow: hidden;
+	margin: 0; padding: 5px 0 0;
+}
+div.opt, p.opt { padding-bottom: 10px; }
+.opt label {
+	float: none;
+	/*position: relative;*/
+	padding: 0;
+	margin-left: 20px; margin-bottom: 0;
+}
+.opt li {
+	list-style-position: outside;
+	display: block;
+	overflow: hidden;
+	vertical-align: middle;
+	padding: 0 0 10px; margin: 0;
+}
+.opt--hrz { overflow: hidden; }
+div.opt--hrz,
+p.opt--hrz,
+.opt--hrz li,
+.form-inline .opt li {
+	/*
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	*/
+	vertical-align: middle;
+	float: left; display: inline;
+	margin-right: 10px
+}
+.form-inline .opt li { padding: 0 }
+.opt--rgh li {
+	text-align: right;
+	float: right; display: inline;
+	margin-left: 10px; margin-right: 0
+}
+.opt--rgh input { float: right }
+.opt--rgh label { margin-left: 0; margin-right: 20px;
+}
+.opt-evidenza label { font-weight: bold; }
+
+
+/* =inl */
+.inl {
+	width: auto;
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+	margin-right: 10px;
+}
+*:last-child.inl { margin-right: 0 }
+label.inl { margin-right: 5px; }
+
+/* =required */
+.label-required { font-style: italic }
+
+/* =form-inline */
+.form-inline label,
+.form-inline input,
+.form-inline select,
+.form-inline .opt,
+.form-inline .btn-group {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.form-inline .opt label { display: block }
+.form-inline div.opt,
+.form-inline p.opt { margin-right: 10px; }
+.form-inline input[type="text"],
+.form-inline select { width: auto; }
+
+/* =form-block */
+.form-block { margin-bottom: 15px; }
+.form-block-hrz .field-label {
+	text-align: right; width: 30%; float: left;
+}
+.form-block-hrz .field-content,
+.form-block-hrz p.error {
+	width: 68%; float: right;
+}
+.form-block-hrz .field-content p.error { width: 100%; }
+.form-block .field-group { width: 100%; float: left; }
+.field-group {
+	clear: both;
+	padding: 0; margin: 0/* 0 10px*/;
+}
+.form-block-hrz .field-group { padding-bottom: 10px; }
+
+
+.field-group-compound,
+.field-group-related { overflow: hidden; list-style: none; margin-bottom: 0 }
+.field-group-compound li,
+.field-group-compound div { float: left; width: auto; display: inline-block; margin-right: 10px; }
+.field-group-compound > *:last-child { margin-right: 0 }
+.field-group-compound .opt { clear: none; margin-top: 0; padding-top: 0; }
+
+.has-helpformat input[type="text"],
+.has-helpformat input[type="password"],
+.has-helpformat textarea,
+input[type="text"].has-helpformat { width: 90% }
+
+/* =form-has-controls */
+.form-has-controls { padding-right: 20px; }
+/* =add-controls */
+.field-group,
+.add-controls { position: relative; z-index: 1; }
+.field-controls,
+.add-controls strong{
+	position: absolute;
+	z-index: 10; right: 0; top: 0;
+	margin-right: -15px;
+	width: 14px;
+}
+.add-controls strong { margin-right: 0 }
+.add-controls { padding-right: 16px; }
+
+.form-block-hrz legend.label {
+	text-align: right; width: 30%; float: left;
+}
+.form-block-rgh legend.label { text-align: left; clear: none; }
+.form-block-rgh .field-label { text-align: left; }
+.form-block-hrz .field-group-compound,
+.form-block-hrz .field-group-releated { float: right; width: 68%; /* margin-left: 32% */ }
+
+.field-group--single {
+	position: relative;
+}
+.field-label--inside label {
+	background-color: #fff; color: #ccc;
+	position: absolute; top: 11px; left: 15px;
+	z-index: 0;
+}
+
+/* =fld */
+.fld-block,
+.fld-block-content { position: relative; clear: both; }
+.fld-block-mini { clear: both; }
+
+.fld-actions {
+	position: absolute; right: 0; top: 0; 
+}
+/* =help */
+.help-block, .help-inline, .help-format {
+	color: #999;
+	font-size: 12px; font-size: 1.2rem; line-height: 1.5;
+	font-style: normal;
+	padding: 5px 5px 0 2px
+}
+.hel-format { letter-spacing: .15em; }
+.help-block { display: block; clear: both; padding: 0; margin-top: -5px; margin-bottom: 10px }
+.help-inline, .help-format { display: inline; }
+.help-inline { margin-left: 5px; }
+
+
+/* =feedback */
+.feedback {
+	margin: 0 0 15px;
+}
+.feedback ul { margin: 0; padding: 0 }
+.feedback ul li {
+	list-style-type: square; margin-left: 15px; 
+}
+.feedback h2,
+.feedback h3,
+.feedback h4,
+.feedback h5,
+.feedback h6 { margin: 0 0 5px }
+.feedback p,
+.feedback ul,
+.feedback p,
+.feedback li{ margin: 0 0 5px }
+.feedback-error {
+	color: #e75656;
+	padding: 5px 5px 0; 
+	border: 1px solid #e75656
+}
+.feedback-error label { margin-top: 0; margin-bottom: 0 }
+.error label {
+	color: #e75656;
+	font-weight: bold;
+}
+label .error, p.error,
+input.error[type="checkbox"] + label,
+input.error[type="radio"] + label,
+label.error {
+	color: #e75656;
+	font-weight: bold;
+}
+label .error, p.error { display: block; clear: both; }
+.error input,
+.error select,
+.error textarea,
+input.error,
+select.error,
+textarea.error { border-color: #e75656}
+.feedback-success {
+	padding: 5px 5px 0;
+	border: 1px solid #3a9517
+}
+.feedback-success  strong, p.success {
+	color: #3a9517;
+	font-weight: bold;
+}
+/* @element Hidden */
+.structural, label.structural, legend.structural {
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 0; line-height: 0; height: 0;
+	padding: 0; margin: 0
+}
+.is-hidden { left: -99999em; position: absolute; }
+
+@media only screen {
+    button,
+	input,
+	select,
+	input[type="radio"],
+	textarea,
+	input[type="checkbox"] {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	input[type="password"],
+	input[type="text"],
+	textarea,
+	select {
+		-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1)
+	}
+	input[type="password"]:hover,
+	input[type="text"]:hover,
+	textarea:hover,
+	input[type="password"]:focus,
+	input[type="text"]:focus,
+	textarea:focus,
+	select:focus {
+		-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1)
+	}
+	input[type="password"]:focus,
+	input[type="text"]:focus,
+	textarea:focus,
+	select:focus {
+		-webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+		box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1)
+	}
+	input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+	}
+	.btn {
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.btn:hover {
+  /* Buttons in IE7 don't get borders, so darken on hover */
+	-webkit-transition: background 0.8s linear;
+     -moz-transition: background 0.8s linear;
+      -ms-transition: background 0.8s linear;
+       -o-transition: background 0.8s linear;
+          transition: background 0.8s linear;
+	}
+	.btn-primary {
+		-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3),2px 2px 1px #e3e3e3;
+		-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3),2px 2px 1px #e3e3e3, -2px -2px 1px #e3e3e3, inset 1px 1px 1px rgba(255,255,255,0.3);
+		box-shadow: 0px 1px 2px rgba(0,0,0,0.3), inset -1px -1px 1px rgba(255,255,255,0.5), inset 1px 1px 1px rgba(255,255,255,0.5);
+	}
+	.btn-primary:hover {
+		box-shadow: 0 0 0 transparent;
+	}
+	
+}
+
+/* @end Form */

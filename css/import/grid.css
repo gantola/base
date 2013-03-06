@@ -1,0 +1,14 @@
+/* @Grid */
+.t-g--2,
+.t-g--2a,
+.wrp { width: 100%; overflow: hidden; }
+.t-g--2 .t-unit-a {
+	float: right; width: 622px;
+}
+.t-g--2 .t-unit-b {
+	float: left; width: 306px;
+}
+.t-g--2a .t-unit-a,
+.t-g--2a .t-unit-b { float: left; width: 464px; }
+.t-g--2a .t-unit-b { float: right; }
+/* @end Grid */

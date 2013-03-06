@@ -1,0 +1,19 @@
+/* @Structure */
+body { text-align: center; padding: 0; }
+.pg {
+	text-align: center;
+	width: 100%;
+	width: 994px;
+	margin: 0 auto; padding: 0;
+}
+.pg-inner { text-align: left; }
+#content { clear: both; }
+.content-inner,
+.masthead-inner,
+.footer-inner { text-align: left; }
+.content-inner,
+.footer-inner {
+	overflow: hidden;
+}
+
+/* @end Structure */

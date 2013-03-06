@@ -1,0 +1,5 @@
+body { color: #f00; }
+body { color#f00; }
+body { color#f00; }
+/* =test */
+.test { background-color: #f00 }

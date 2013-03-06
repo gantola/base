@@ -1,0 +1,98 @@
+/* =mod-manufacturer */
+/* .mod-hd, .mod-title, .mod-bd {} */
+.mod  { margin: 0 0 20px; border: 1px solid #000 }
+.mod-hd { padding: 10px; }
+.mod-title {
+	text-transform: uppercase; font-size: 12px; line-height: 15px; margin: 0; padding: 0
+}
+.lst-logos {
+    list-style: none;
+	margin: 0 0 0 -10px; padding: 0;
+	clear: both; overflow: hidden;
+}
+.lst-logos  a { width: 100%; height: 100%; float: left; display: block; margin-top: -2px; border: 0; text-decoration: none; }
+.lst-logos li {
+	font-size: 11px; line-height: 15px; 
+	text-align: center;
+	position: relative;
+	display: inline;
+	float: left; overflow: hidden;
+	margin: 0 0 10px 10px; padding: 0;
+}
+.lst-logos strong {
+	font-size: 1px; line-height: 1px; height: 1px; position: absolute; clip: rect(0,0,0,0);
+}
+.lst-logos li {
+    height: 50px;
+    line-height: 50px;
+    width: 85px;
+	overflow: hidden;
+	/* =IE6
+	font-size: 85px; height: auto;
+	*/
+}
+.lst-logos li img {
+    text-align: center;
+    vertical-align: middle;
+	border: 0
+}
+.easyfarma .lst-logos li,
+.easysalus .lst-logos li {
+    height: 50px;
+    line-height: 50px;
+    width: 87px;
+}
+.easysalus .mod-bd,
+.easyfarma .mod-bd { padding: 10px; }
+.slider-logos div {}
+.easysalus .mod-hd { left: -9999em; position: absolute; }
+.easyfarma .mod-hd { overflow: hidden; padding: 10px 10px 0 }
+.easyfarma .mod-title {
+	background-color: #87b2c9; color: #fff;
+	font-family: arial, sans-serif;
+	float: left;
+	padding: 5px 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-webkit-box-shadow: 1px 1px 4px -1px #000;
+	   -moz-box-shadow: 1px 1px 4px -1px #000;
+	        box-shadow: 1px 1px 4px -1px #000;
+}
+.easyfarma .mod-manufacturer .mod-bd {
+	border: 1px solid #dfdfdf;
+	border-color: #f5f5f5 #dfdfdf #dfdfdf #f5f5f5;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	   -moz-border-radius-bottomright: 10px;
+	   -moz-border-radius-bottomleft: 10px;
+			border-bottom-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+	-webkit-box-shadow: 1px 1px 4px -4px #000;
+	   -moz-box-shadow: 1px 1px 4px -4px #000;
+	        box-shadow: 1px 1px 4px -4px #000;
+}
+.easysalus .mod-manufacturer .mod-bd {
+	border: 1px solid #DCDCDC;
+}
+.easysalus .mod,
+.easyfarma .mod { border: 0 }
+.mod-manufacturer .slider-logos { /*min-height: 50px; height: auto !important;*/ height: 50px; overflow: hidden; }
+.mod-manufacturer .slider-logos li { margin-bottom: 0 }
+
+
+@media screen and (max-width: 480px) {
+	.mod-manufacturer .lst-logos { margin-left: -2.155172413793103%; }
+	.mod-manufacturer .lst-logos li {
+		width: 30.46551724137931%; height: auto;
+		padding: 1%;
+		margin-left: 2.155172413793103%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.mod-manufacturer .lst-logos li img { max-width: 100%; height: auto; }
+}
